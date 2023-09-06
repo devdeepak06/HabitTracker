@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    background-color: rgb(242, 200, 175);
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+}
+
+code {
+    font-family: 'Courier New', monospace;
+}
+
+.delete-icon {
+    color: black;
+}
+
+.delete-icon .fa-regular {
+    font-size: 1.5rem;
+    color: #ff0829;
+}
+
+.fa-regular .fa-trash-can {
+    color: black;
+}
+
+
+.col-md-6 img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+h4.text-dark::before {
+    content: "\f234";
+    padding-right: 5px;
+    font-family: FontAwesome;
+}
+
+#login::before {
+    content: "\f2f6";
+    padding-right: 5px;
+    font-family: FontAwesome;
+}
+
+.habit {
+    background-color: orange;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 8px;
+    margin-right: 10px;
+    font-family: 700s;
+}
