@@ -4,8 +4,11 @@
 
 ## Intoduction
 
-This is a Habit Tracker Project which is work for track user habit for daily basis and weekly.
-This app will help you to create and maintain an awesome daily and weekly routine.
+This is a Habit Tracker Project. Which is used to track your work. You can add your work and track it. You can also see your work status. You can also change your work status. You can also delete your work.
+These are the 3 status of a habit:
+1. Done - Mark the habit as done for a day.
+2. Not done - Mark the habit as not done for a day
+3. None - User did not take any action on a habit for a day
 
 
 
@@ -32,8 +35,7 @@ This app will help you to create and maintain an awesome daily and weekly routin
 
 ## Features
 
-- you can add multiple habits to track habits like     reading a book, going to the gym etc.
-- Track each habit everyday. These are the 3 statuses of a habit:
+- These are the 3 status of a habit:
     - Done - Mark the habit as done for a day.
     - Not done - Mark the habit as not done for a day
     - None - User did not take any action on a habit for a day
@@ -41,5 +43,4 @@ This app will help you to create and maintain an awesome daily and weekly routin
 - A view to display 7 days of each habit:
     - Show today where user can mark todays habit
     - And show the previous 6 days and the status of that habit for each day
-    - A user can toggle between the three (above mentioned) statuses of a habit i.e. I can change today’s status as done, not done or none anytime.
-    
+    - A user can toggle between the three (above mentioned) status of a habit i.e. I can change today’s status as done, not done or none anytime.

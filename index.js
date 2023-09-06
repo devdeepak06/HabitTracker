@@ -1,7 +1,9 @@
+// ----require ----//
 const express = require('express');
 const expressLayouts = require('express-ejs-layouts');
+// ----environment----//
 const env = require('./config/environment');
-// ---mongodb connection----//
+// ----database----//
 const mongoose = require('./config/mongoose');
 
 const app = express();
@@ -11,7 +13,7 @@ const session = require('express-session');
 const passport = require('passport');
 const LocalStretegy = require('./config/passport-local-stretegy');
 const flash = require('connect-flash');
-const customMware = require('./config/middlewear');
+const customMware = require('./config/middleware');
 
 
 // -----EJS----//
@@ -38,14 +40,14 @@ app.use(session({
 
 
 
-// use passport 
+// ----passport----//
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(passport.setAuthenticatedUser);
 app.use(flash());
 app.use(customMware.setflash);
 
-
+// ----routes----//
 app.use('/', require('./routes'))
 app.listen(port, function(error) {
     if (error) {

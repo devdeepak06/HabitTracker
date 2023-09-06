@@ -22,11 +22,11 @@ module.exports.get_habit = async function (req, res) {
         email = req.user.email;
         let user = await User.findOne({ email: email });
         if (user) {
-            let habbits = await Habit.find({
+            let habits = await Habit.find({
                 email: email,
             });
 
-            if (habbits) {
+            if (habits) {
                 var days = [];
                 days.push(getD(0));
                 days.push(getD(1));
@@ -36,11 +36,11 @@ module.exports.get_habit = async function (req, res) {
                 days.push(getD(5));
                 days.push(getD(6));
 
-                return res.render("dashboard", { habbits, user, days });
+                return res.render("dashboard", { habits, user, days });
             }
         }
     } catch (error) {
-        console.log("Error to fetch deshboard", error);
+        console.log("Error to fetch dashboard", error);
     }
 };
 

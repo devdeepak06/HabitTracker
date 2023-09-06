@@ -5,7 +5,7 @@ const User = require('../models/user');
 // Rendering welcome page
 module.exports.welcome = function(req, res) {
     if (req.isAuthenticated()) {
-        return res.redirect('/deshboard/dashboard');
+        return res.redirect('/dashboard/dashboard');
     }
     return res.render('welcome');
 }
@@ -13,14 +13,14 @@ module.exports.welcome = function(req, res) {
 // Rendering register page
 module.exports.register = function(req, res) {
         if (req.isAuthenticated()) {
-            return res.redirect('/deshboard/dashboard');
+            return res.redirect('/dashboard/dashboard');
         }
         return res.render('register');
     }
     // Rendering login page
 module.exports.login = function(req, res) {
     if (req.isAuthenticated()) {
-        return res.redirect('/deshboard/dashboard');
+        return res.redirect('/dashboard/dashboard');
     }
     return res.render('login');
 }
@@ -70,7 +70,7 @@ module.exports.create = async function(req, res) {
 module.exports.createSession = function(req, res) {
     req.flash('success', 'Logged in successfully');
 
-    res.redirect('/deshboard/dashboard');
+    res.redirect('/dashboard/dashboard');
 }
 
 

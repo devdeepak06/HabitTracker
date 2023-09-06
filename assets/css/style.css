@@ -1,12 +1,12 @@
 body {
     margin: 0;
-    background-color: rgb(242, 200, 175);
+    background-color: rgb(241, 236, 234);
     font-family: 'Roboto', sans-serif;
     font-family: 'Sofia Sans Semi Condensed', sans-serif;
 }
 
 code {
-    font-family: 'Courier New', monospace;
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
 }
 
 .delete-icon {
@@ -32,7 +32,7 @@ code {
 h4.text-dark::before {
     content: "\f234";
     padding-right: 5px;
-    font-family: FontAwesome;
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;   
 }
 
 #login::before {
@@ -42,8 +42,8 @@ h4.text-dark::before {
 }
 
 .habit {
-    background-color: orange;
-    color: black;
+    background-color: rgb(238, 188, 188);
+    color: rgb(0, 0, 0);
     display: flex;
     justify-content: space-around;
     align-items: center;
