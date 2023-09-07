@@ -27,11 +27,6 @@ passport.use(new LocalStretegy({
         }
 
     }))
-
-
-
-
-
 // serializing the user to decide which key is to be kept in cookie
 
 passport.serializeUser(function(user, done) {

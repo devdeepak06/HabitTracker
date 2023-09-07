@@ -13,7 +13,5 @@ const production = {
 
 }
 
-
 module.exports = eval(process.env.HABIT_ENV) == undefined ? devlopment : eval(process.env.HABIT_ENV);
-
 // module.exports = production;
